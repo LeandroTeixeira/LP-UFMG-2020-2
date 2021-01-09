@@ -1,0 +1,6 @@
+a) O código está tentando atribuir um ponto e vírgula a um outro ponto e vírgula.
+
+b) Em SML, a operação de multiplicação exige que ambos os operandos sejam do mesmo tipo. Visto que o código está tentando multiplicar um int por um real, uma mensagem de erro surge.
+
+c) O trecho "fact n = n * fact (n -1)" irá,a partir de um número n, multiplicar n pelo resultado da própria função invocada de forma recursiva com n decrementado em 1. 
+Só que n vale para qualquer número natural, inclusive 0. Isso quer dizer que o trecho "= | fact 0 = 1;" nunca será chamado porque ao chegar em 0, ele simplesmente chamará fact com n = -1. Por isso, visto que esse trecho nunca será chamado, o programa dá esse erro.
